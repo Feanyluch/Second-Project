@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lato:wght@300&family=Skranji&display=swap');
+/* UNIVERSALS */
+:root{
+    --primary-color: rgba(2, 100, 100, 0.973);
+    --secondary-color: rgba(255, 217, 0, 0.9);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.active2{
+    background-color: rgba(23, 124, 124, 0.904);
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    font-weight: bold;
+    transition: 0.4s linear;
+    display: inline-block;
+}
+
+.active2:hover{
+    background-color: var(--primary-color);
+}
+
+/* header sytling */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+}
+
+header .toggle-button{
+    display: none;
+}
+
+header .logo{
+    font-size: 30px;
+    font-family: 'Skranji', cursive;
+}
+
+header .nav-link1, 
+header .nav-link2, 
+header #nav-link2 i{
+    color: rgb(36, 35, 35);
+}
+
+header .nav-link1{
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s linear;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li{
+    padding: 0 20px;
+}
+
+header #nav-link1 a:hover{
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 3px;
+}
+
+header .active1, 
+header .active2{
+    font-size: 15px;
+    border: 1px solid black;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header #nav-link2 .active2{
+    color: #fff;
+    border: none;
+}
+
+header #nav-link2 .active2:hover{
+    background-color: var(--primary-color);
+}
+
+header #nav-link2 .active1{
+    padding: 13px 25px;
+}
+
+header #nav-link2 .active2 {
+    padding: 13px 20px;
+}
+
+header #nav-link2 i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* Home styling */
+#home{
+    height: inherit;
+    width: 100%;
+    padding-top: 30vh;
+    padding-bottom: 5vh;
+    background-color: var(--secondary-color);
+}
+
+#home .home-content1 h2{
+    font-size: 3.5rem;
+    font-family: 'Cormorant Garamond', serif; 
+}
+
+.home-content1{
+    padding-top: 20px;
+}
+
+#home .home-content1 p{
+    font-size: 24px;
+    padding: 40px 0;
+}
+
+#home .home-content1 h4{
+    padding: 40px 0;
+    font-size: 13px;
+}
+
+#home .home-img img{
+    height: 95%;
+    width: 95%;
+}
+
+/* Content styling */
+#content{
+    text-align: center;
+    margin: 18vh 0;
+}
+
+#content .why{
+    margin: 5vh 0;
+}
+
+#content .why h2{
+    font-size: 3.7rem;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 5px 0;
+}
+
+#content .why p{
+    color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+#content #subcontent{
+    margin-top: 19vh;
+} 
+
+#subcontent .subcontent-a h3{
+    padding: 15px 0;
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.subcontent2 p{
+    font-family: 'Cormorant Garamond', serif;
+    margin: 18vh 0;
+    font-size: 4.1rem;
+    line-height: 65px;
+    font-weight: 600;
+}
+
+.subcontent2 .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subcontent2 .flex img{
+    height: 12%;
+    width: 12%;
+    margin: 40px 0;
+}
+
+.subcontent3{
+    margin: 21vh 0;
+}
+
+.subcontent3 h2{
+    font-size: 2.5rem;
+    margin-top: 15vh;
+    margin-bottom: 8vh;
+    font-family: "cormorant Garamond", serif;
+}
+
+/* GROW STYLING */
+
+#grow-content{
+    background-color: rgba(148, 135, 135, 0.1);
+    padding: 9vh 0;
+}
+
+#grow-content .grow-market2{
+    display: none;
+}
+
+.grow-content1{
+    text-align: center;
+}
+
+.grow-content1 h2{
+    font-size: 3.7rem;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 30px 0;
+}
+
+.grow-content1 p{
+    font-size: 17px;
+}
+
+.grow-content2 .grid{
+    margin: 22vh 0;
+    gap: 90px;
+}
+
+.grow-content2 .grid img{
+    width: 99%;
+    height: 99%;
+}
+
+.grow-content2 .grow-market{
+    margin-top: 15vh;
+}
+
+.grow-content2 .grow-market h2{
+    font-size: 2.3rem;
+    margin: 20px 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.grow-content2 .grow-market p{
+    line-height: 4vh;
+    font-size: 17px;
+}
+
+.audience-content{
+    text-align: center;
+}
+
+.audience-content .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.audience-content .grid .grow-subcontent img{
+    height: 43%;
+    width: 65%;
+}
+
+.audience-content .grid .grow-subcontent h3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    padding: 20px 0;
+}
+
+.audience-content .grid .grow-subcontent p{
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.ready{
+    margin-bottom: 10vh;
+}
+
+.ready h2{
+    font-size: 3.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 60px;
+    padding-bottom: 8vh;
+}
+
+
+/* How styling */
+#how{
+    margin: 17vh 0;
+}
+
+#how .how-content h2{
+    font-size: 3.7rem;
+    line-height: 60px;
+    margin: 20px 0;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#how .how-image{
+    margin: 32vh 0;
+}
+
+#how .how-image img{
+    height: 99%;
+    width: 99%;
+}
+
+#accordion .body{
+    display: none;
+}
+
+#accordion .active .body{
+    display: block;
+}
+ 
+#accordion .panel{
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin:5px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#accordion .panel .body img{
+    display: none;
+}
+
+.panel .header{
+    display: flex;
+    margin: 20px 0;
+}
+
+.panel .header i{
+    padding: 10px 10px 10px 0;
+    margin-right: 20px;
+    color: rgba(21, 110, 110, 0.904);
+    font-size: 1.5rem;
+}
+
+.panel .header h3{
+    font-size: 2.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+}
+
+.panel .header h3:hover{
+    color: rgba(21, 110, 110, 0.904);
+}
+
+.panel .body p{
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 6vh;
+    padding: 20px 0;
+}
+
+/* DONE STYLING */
+
+#done{
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 16vh 0;
+}
+
+#done h2{
+    font-size: 5rem;
+    font-family: 'cormorant Garamond', serif;
+    padding: 20px;
+}
+
+/* FOOTER1 STYLING */
+
+#footer1{
+    padding: 12vh 0;
+    background-color: rgba(148, 135, 135, 0.15);
+}
+
+#footer1 .container{
+    max-width: 1200px;
+}
+
+#footer1 .grid{
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+#footer1 .footer1-content h4{
+    font-size: 17px;
+    padding: 20px 0;
+}
+
+#footer1 .footer1-content .footer1-subcontent1{
+    margin-bottom: 5vh ;
+}
+
+#footer1 .footer1-content .footer1-subcontent1 img,
+#footer1 .footer1-content .footer1-subcontent2 img{
+    height: 95%;
+    width: 95%;
+    padding: 20px 0;
+}
+
+#footer1 .footer1-content .footer1-subcontent1 p,
+#footer1 .footer1-content .footer1-subcontent2 p{
+    font-size: 14px;
+    letter-spacing: 0.05px;
+    padding-bottom: 20px;
+}
+
+#footer1 .footer1-content .footer1-subcontent1 a,
+#footer1 .footer1-content .footer1-subcontent2 a{
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s linear;
+}
+
+#footer1 .footer1-content .footer1-subcontent1 a:hover{
+    border-bottom: 1px solid black;
+}
+
+#footer1 .footer1-content .footer1-subcontent2 a:hover{
+    border-bottom: 1px solid black;
+}
+
+#footer1 .footer1-links li{
+    padding: 7px 0;
+}
+
+#footer1 .footer1-links a{
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#footer1 .footer1-links a:hover{
+    border-bottom: 1px solid black;
+}
+
+#footer1 .footer1-links{
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN FOOTER SYTLING */
+
+footer{
+    background-color: rgba(148, 135, 135, 0.15);
+    border-top: 1px solid black;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+}
+
+footer .footer-image img{
+    height: 30%;
+    width: 40%;
+    padding: 0 10px;
+}
+
+footer .footer-socials a{
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+footer .footer-image, 
+footer .footer-socials{
+    margin-top: 10vh;
+}
+
+footer .footer-copyrigth{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright select{
+    padding: 10px 20px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    background-color: transparent;
+    outline: black;
+}
+
+.footer-copyright select:hover{
+    background-color: rgba(94, 177, 209, 0.1);
+}
+
+.footer-copyright p{
+    font-size: 11px;
+    line-height: 18px;
+}
+
+footer .footer-copyright a{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer .footer-copyright a:hover{
+    border-bottom: 1px solid black;
+}
+
+
+/* RESPONSIVENESS FOR MOBILE AND TAB */
+
+@media(max-width: 1100px){
+    /* HEADER STYLING */
+    header .toggle-button{
+        display: initial;
+        position: absolute;
+        font-size: 30px;
+    }
+
+    header #nav-link2 .active1{
+        border: none;
+    }
+
+    header .nav-link1, 
+    header #nav-link2 i,
+    header #nav-link2 .active2{
+        display: none;
+    }
+
+    /* HOME STYLING */
+
+    #home{
+        padding-left:5vh;
+        padding-right: 5vh;
+    }
+
+    #home .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #home .home-content1 h2 br, 
+    #home .home-content1 p br{
+        display: none;
+    }
+
+    /* GROW CONTENT STYLING */
+
+    #grow-content .grow-market br{
+        display: none;
+    }
+
+    #grow-content .grow-market1{
+        display: none;
+    }
+
+    #grow-content .grow-market2{
+        display: initial;
+    }
+
+    /* HOW CONTENT */
+
+    #how .how-content h2 br{
+        display: none;
+    }
+
+    
+    #how .how-image{
+        display: none;
+    }
+
+    #accordion .panel .body img{
+        display: initial;
+        width: 99%;
+    }
+
+    #accordion .panel .body p{
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    #accordion .panel .body p br{
+        display: none;
+    }
+
+    /* FOOTER STYLING */
+
+    footer .footer-image img{
+        height: 40%;
+        width: 50%;
+    }
+
+    footer .footer-socials a{
+        padding: 0 10px;
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width: 580px){
+    .container{
+        padding: 0 20px;
+    }
+
+    /* HOME STYLING */
+    #home .home-content1 h2{
+        font-size: 40px;
+    }
+
+    #home .home-content1 p{
+        font-size: 20px;
+    }
+
+    /* CONTENT STYLING */
+
+    #content .why{
+        margin: 0;
+    }
+
+    #content .why h2{
+        font-size: 3rem;
+    }
+
+    #subcontent .subcontent-a{
+        margin-bottom: 30px;
+    }
+
+    #subcontent .subcontent-a p br{
+        display: none;
+    }
+
+    #subcontent .subcontent-a p,
+    #content .subcontent2 p{
+        padding: 0 30px;
+    }
+
+    #subcontent .subcontent-a p{
+        font-size: 17px;
+    }
+
+    #content .subcontent2 p{
+        font-size: 3rem;
+    }
+
+    #content .subcontent2 p br{
+        display: none;
+    }
+
+    .subcontent2 .flex img{
+        height: 30%;
+        width: 30%;
+        padding: 0 20px;
+    }
+
+    .subcontent3 h2{
+        font-size: 2rem;
+        font-family: "cormorant Garamond", serif;
+    }
+
+    /* GROW-CONTENT STYLING */
+
+    #grow-content .grow-content2 .grid{
+        gap: 0;
+        margin: 10vh 0;
+    }
+
+    #grow-content .audience-content .grid{
+        gap: 10px;
+    }
+
+    #grow-content .audience-content .grow-subcontent img{
+        height: 30%;
+        width: 35%;
+    }
+
+    #grow-content .audience-content .grow-subcontent h3{
+        font-size: 1.5rem;
+    }
+
+    #grow-content .audience-content .grow-subcontent p br{
+        display: none;
+    }
+
+    #grow-content .audience-content .grow-subcontent p{
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    /* FOOTER STYLING */
+
+    footer .footer-image img{
+        height: 70%;
+        width: 40%;
+    }
+
+    footer{
+        text-align: center;
+        padding: 5vh 0;
+    }
+}
